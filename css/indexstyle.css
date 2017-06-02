@@ -1,0 +1,174 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+div {
+background:url(menu/contact_orange.png)}
+
+.background-hack {  
+z-index                 :-2;
+background-position     :center top;
+background-repeat       :no-repeat;
+-moz-background-size    :cover;
+background-size         :cover;
+position                :fixed;
+top                     :0;
+left                    :0;
+right                   :0;
+bottom                  :0;}
+
+
+
+#randomimg2 {
+z-index                 :-2;
+background-position     :center top;
+background-repeat       :no-repeat;
+-moz-background-size    :cover;
+background-size         :cover;
+position                :fixed;
+top                     :0;
+left                    :0;
+right                   :0;
+bottom                  :0;}
+
+p.Body_copy {
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+	font-size: .9em;
+	line-height: 1.5em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+p.projects_list {
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    line-height: .5em;
+	padding-top: .001em;
+	padding-bottom: .9em;	
+	color:#000;
+}
+
+#div-menu {
+	position:fixed;
+	width:199px;
+	margin-left:100px;
+	margin-top:100px;
+	height: 491px;
+}
+#div-Projects_body {
+	position:relative;
+	width:642px;
+	margin-left:60px;
+	left: 350px;
+	top: 100px;
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 2em;
+	color: #000;
+	background-color: #FFF;
+	text-align: justify;
+
+}
+
+#picture_header {width:642px; height: 417px; background-color:#ffffff;}
+#picture_header a.small, #picture a.small:visited {
+	display:block;
+	position:absolute;
+	width:642px;
+	height:417px;
+	text-decoration:none;
+	background:#ffffff;
+	top:0;
+	left:0;
+	border:0;
+}
+#picture_header a img {
+	border:0;
+	vertical-align: top;
+	position: relative;
+}
+#picture_header a.small:hover {text-decoration:none; background-color:#000000; color:#000000;}
+#picture_header a .large {display:block; position:middle; width:0; height:0; border:0; top:0; left:0;}
+#picture_header a.small:hover .large {
+	display:block;
+	position:relative;
+	top: -312px;
+	left:-395px;
+	width:1096px;
+	height:712px;
+}
+#picture {width:642px; height: 417px; background-color:#ffffff;}
+#picture a.small, #picture a.small:visited {
+	display:block;
+	width:642px;
+	height:417px;
+	text-decoration:none;
+	background:#ffffff;
+	top:0;
+	left:0;
+	border:0;
+}
+
+#picture a img {border:0;}
+#picture a.small:hover {text-decoration:none; background-color:#000000; color:#000000;}
+#picture a .large {display:block; position:middle; width:0; height:0; border:0; top:0; left:0;}
+#picture a.small:hover .large {
+	display:block;
+	position:relative;
+	top: -600px;
+	left:-385px;
+	width:1096px;
+	height:712px;
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 35px;
+	font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaLTStd-Roman";
+  src: url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-roman-webfont.eot");
+  src: local("☺"),
+    url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-roman-webfont.otf") format("opentype"),
+	url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-roman-webfont.woff") format("woff"),
+    url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-roman-webfont.svg#filename") format("svg");
+  }
+@font-face {
+  font-family: "HelveticaLTStd-Light";
+  src: url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-light-webfont.eot");
+  src: local("☺"),
+    url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-light-webfont.otf") format("opentype"),
+	url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-light-webfont.woff") format("woff"),
+    url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-light-webfont.svg#filename") format("svg");
+  }
+@font-face {
+    font-family: 'HelveticaLTStdBold';
+    src: url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-bold-webfont.eot");
+    src: url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-bold-webfont.eot?#iefix") format('embedded-opentype'),
+         url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-bold-webfont.woff") format('woff'),
+         url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-bold-webfont.ttf") format('truetype'),
+         url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-bold-webfont.svg#HelveticaLTStdBold") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaLTStdLightItalic';
+    src: url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-lightobl-webfont.eot");
+    src: url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-lightobl-webfont.eot?#iefix") format('embedded-opentype'),
+         url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-lightobl-webfont.woff") format('woff'),
+         url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-lightobl-webfont.ttf") format('truetype'),
+         url("http://www.noarchitecture.com/projects/fonts/helveticaltstd-lightobl-webfont.svg#HelveticaLTStdLightItalic") format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-family: HelveticaLTStd-Light, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+p.project_header {
+	font-family: HelveticaLTStd-Bold, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: .08em;
+	height: 2
+	
+	
+}.h1 {
+	font-size: 2em;
+}
