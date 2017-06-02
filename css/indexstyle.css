@@ -2,7 +2,7 @@
 /* CSS Document */
 
 div {
-background:url(menu/contact_orange.png)}
+background:url(bg/hutong.jpg)}
 
 .background-hack {  
 z-index                 :-2;
@@ -49,10 +49,24 @@ p.projects_list {
 #div-menu {
 	position:fixed;
 	width:199px;
-	margin-left:100px;
+	margin-left:0px;
 	margin-top:100px;
 	height: 491px;
 }
+
+#contents {
+	position:absolute;
+	margin-top:500px;
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: .5em;
+	padding-top: .001em;
+	padding-bottom: .9em;	
+	color:#FFF;
+	
+	
+}
+
 #div-Projects_body {
 	position:relative;
 	width:642px;

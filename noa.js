@@ -1,7 +1,8 @@
 $(function() {
 	var array = [
-	"Menu/noa_orange.png",
-	"Menu/contact_orange.png",
+	"bg/hutong.jpg",
+	"bg/flower.jpg",
+	"bg/courtyard.jpg",
 	];
 	var l = array.length;
 	var r = Math.floor(Math.random()*l);
@@ -17,5 +18,15 @@ $(function(){
 	var bglink = $(this).attr("href");
 	$("div#randomimg2").css("background-image","url("+bglink+")");
 	 return false;
+	});
+});
+
+$(function(){
+	$(".basic-info").hide();
+	$(".basic-info#work").show();
+	$("span").click(function(){
+	var show = $(this).attr("id");
+	$(".basic-info").hide();
+	$(".basic-info#"+show).show();
 	});
 });
