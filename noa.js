@@ -1,15 +1,24 @@
+
+
 $(function() {
 	var array = [
 	"bg/hutong.jpg",
-	"bg/flower.jpg",
+	"bg/trail.jpg",
 	"bg/courtyard.jpg",
+	"bg/firstavenue.jpg",
 	];
 	var l = array.length;
 	var r = Math.floor(Math.random()*l);
 	var bgimgurl = array[r];
 	$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
+	
+		$("#header-title").click(function(){
+		r = Math.floor(Math.random()*l);
+		bgimgurl = array[r];
+		$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
+		return false;
+		})
 });
-
 
 
 
@@ -24,9 +33,13 @@ $(function(){
 $(function(){
 	$(".basic-info").hide();
 	$(".basic-info#work").show();
-	$("span").click(function(){
+	$(".basic-info#foot").show();
+	$('#work, #news, #about').click(function(){
 	var show = $(this).attr("id");
 	$(".basic-info").hide();
 	$(".basic-info#"+show).show();
+	$(".basic-info#foot").show();
 	});
 });
+
+

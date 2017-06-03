@@ -7,92 +7,48 @@
 
 	<title>no architecture</title>
 	<link rel="stylesheet" type="text/css" href="./css/indexstyle.css">
-	
-	
-	
-	<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-    var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-	</script>
-
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
-    </script>
-	<script src="noa.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="./noa.js"></script>
 	
 	<style type="text/css">
-	body,td,th {
+	body{
 	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.1em;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-}
-h1 {
-	font-size: 2em;
-	font-family: "Helvetica LT Std Bold", Helvetica, Arial, sans-serif;
-}
-h2 {
-	font-size: 12px;
-}
-
+	}
 		a:link { color: #FFFFFF; }
-		a:visited { color: #000000; }
+		a:visited { color: #FFFFFF; }
 		a:hover { color: #FF0000; }
-		a:active { color: #000000; }
+		a:active { color: #FFFFFF; }
 		a { text-decoration: none; }
 		.hand { cursor:pointer; }
-
 	</style>
-	
 
-	
 </head>
 
 
 <body onload="MM_preloadImages('Menu/contact_orange.png','Menu/NOA_Orange.png')">
 	
+<p id="header">
+	<a href="mailto:info@noarchitecture.com" id="header-title">NO ARCHITECTURE </a>
+	<a href="mailto:info@noarchitecture.com" id="header-contact">
+	<br/>NO ARCHITECTURE, PLLC
+	<br/>176 Elizabeth Street, 2nd Floor
+	<br/>New York, NY 10012 USA
+	<br/>TEL:+ 1 646 662 9881
+	<br/>E-mail:info@noarchitecture.com
+	</a>
+</p>
 	
 	
 	
 	<div id="randomimg2" class="background-hack"></div>
-
-	<div id="div-menu">
-	
-	<a href="http://noarchitecture.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('noa','','Menu/noa_orange.png',1)">
-	<img src="Menu/noa_black.png" name="noa" width="187" height="62" border="0" id="noa" />
-	</a>
-	<br /><br />
-	<a href="http://noarchitecture.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','Menu/contact_orange.png',1)">
-	<img src="Menu/contact_black.png" name="contact" width="181" height="59" border="0" id="contact" />
-	</a>
-    <br /><br />
-	</div>
 	
 	<div id="contents">
+
 	
-	<p class="cata"><span id="work">Works</span>&nbsp;&nbsp;<span id="news">News</span>&nbsp;&nbsp;<span id="about">About</span></p>
+	
+	<p class="cata"><a id="work">Works</a> | <a id="news">News</a> | <a id="about">About</a></p>
 	
 	<div id="box">
 	            <p class="basic-info" id="about" style="line-height:25px;">
@@ -147,12 +103,40 @@ h2 {
             </p>
 			
 			<p class="basic-info" id="work" style="line-height:25px;">	
-				<a href="bg/hutong.jpg" class="hand" id="top">Vertical Hutongs <br /></a>
-				<a href="bg/courtyard.jpg" class="hand" id="top">Courtyard Housing <br /></a>
-				<a href="bg/flower.jpg" class="hand" id="top">Flower Housing <br /></a>
+				<a href="bg/hutong.jpg" class="hand" id="top">Vertical Hutongs </a> <a href="detail/hutong.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/courtyard.jpg" class="hand" id="top">Courtyard House </a><a href="detail/courtyard.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/klekovaca.jpg" class="hand" id="top">Klekovaca Mountain Resort </a><a href="detail/klekovaca.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/unplaza.jpg" class="hand" id="top">865 First Avenue </a><a href="detail/unplaza.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/ninthavenue.jpg" class="hand" id="top">630 Ninth Avenue </a><a href="detail/ninthavenue.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/flower.jpg" class="hand" id="top">Flower Housing </a><a href="detail/flower.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/hotel-hester.jpg" class="hand" id="top">Hotel Hester </a><a href="detail/hotel-hester.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/bicity.jpg" class="hand" id="top">Bi-City Biennale of Urbanism Architecture </a><a href="detail/bicity.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/cluster.jpg" class="hand" id="top">Cluster Houses </a><a href="detail/cluster.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/courtyardhousing.jpg" class="hand" id="top">Courtyard Housing </a><a href="detail/courtyardhousing.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/terrace.jpg" class="hand" id="top">Terrace House </a><a href="detail/terrace.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/science-city.jpg" class="hand" id="top">Science City </a><a href="detail/science-city.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/trail.jpg" class="hand" id="top">Trail House </a><a href="detail/trail.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/west-hotel.jpg" class="hand" id="top">319 West 35th Street </a><a href="detail/west-hotel.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/science-island.jpg" class="hand" id="top">Science Island </a><a href="detail/science-island.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/firstavenue.jpg" class="hand" id="top">75 First Avenue </a><a href="detail/firstavenue.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/museo-lima.jpg" class="hand" id="top">Museum of Contemporary Art </a><a href="detail/museo-lima.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/allegheny.jpg" class="hand" id="top">Allegheny Mountain House </a><a href="detail/allegheny.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/dorigny.jpg" class="hand" id="top">Unitheque A Dorigny </a><a href="detail/dorigny.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/helsinki.jpg" class="hand" id="top">Guggenheim Helsinki </a><a href="detail/helsinki.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/taichung.jpg" class="hand" id="top">Taichung City Cultural Center </a><a href="detail/taichung.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/lesoliver.jpg" class="hand" id="top">Foundation Les Olivers Twin Courtyards </a><a href="detail/lesoliver.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/busan.jpg" class="hand" id="top">Busan Opera House </a><a href="detail/busan.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/aalto.jpg" class="hand" id="top">New Campus Center Aalto University </a><a href="detail/aalto.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/sola-radhus.jpg" class="hand" id="top">Sola Radhus </a><a href="detail/sola-radhus.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/highline.jpg" class="hand" id="top">This is not a Park: HI-LO Line</a><a href="detail/highline.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/lowwet.jpg" class="hand" id="top">Low/Wet/Humid </a><a href="detail/lowwet.pdf" class="hand" id="top target="_blank">| detail</a><br />
+				<a href="bg/notpark.jpg" class="hand" id="top">Berlin Wildness </a><a href="detail/notpark.pdf" class="hand" id="top target="_blank">| detail</a><br />
 			</p>
-	
+			
+			<p class="basic-info" id="foot" style="line-height:25px;">All content © 2017 NO ARCHITECTURE, PLLC. All rights reserved</p>
+			
 		</div>
 	</div>
+	
 </body>
 </html>

@@ -30,112 +30,48 @@ left                    :0;
 right                   :0;
 bottom                  :0;}
 
-p.Body_copy {
-	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-	font-size: .9em;
-	line-height: 1.5em;
-	padding-top: 0.6em;
-	padding-bottom: 0.6em;
-}
-p.projects_list {
-	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-    font-size: .8em;
-    line-height: .5em;
-	padding-top: .001em;
-	padding-bottom: .9em;	
-	color:#000;
-}
 
 #div-menu {
-	position:fixed;
+	position:absolute;
 	width:199px;
 	margin-left:0px;
 	margin-top:100px;
 	height: 491px;
 }
 
+#header-title {
+	position:absolute;
+	margin-top:0px;
+	margin-left:-5px;
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    font-size: 8em;
+    line-height: 1em;
+
+}
+
+#header-contact {
+	position:absolute;
+	margin-top:120px;
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+
+}
+
+
+
 #contents {
 	position:absolute;
-	margin-top:500px;
+	margin-top:250px;
 	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: .5em;
 	padding-top: .001em;
 	padding-bottom: .9em;	
 	color:#FFF;
-	
-	
 }
 
-#div-Projects_body {
-	position:relative;
-	width:642px;
-	margin-left:60px;
-	left: 350px;
-	top: 100px;
-	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	line-height: 2em;
-	color: #000;
-	background-color: #FFF;
-	text-align: justify;
 
-}
-
-#picture_header {width:642px; height: 417px; background-color:#ffffff;}
-#picture_header a.small, #picture a.small:visited {
-	display:block;
-	position:absolute;
-	width:642px;
-	height:417px;
-	text-decoration:none;
-	background:#ffffff;
-	top:0;
-	left:0;
-	border:0;
-}
-#picture_header a img {
-	border:0;
-	vertical-align: top;
-	position: relative;
-}
-#picture_header a.small:hover {text-decoration:none; background-color:#000000; color:#000000;}
-#picture_header a .large {display:block; position:middle; width:0; height:0; border:0; top:0; left:0;}
-#picture_header a.small:hover .large {
-	display:block;
-	position:relative;
-	top: -312px;
-	left:-395px;
-	width:1096px;
-	height:712px;
-}
-#picture {width:642px; height: 417px; background-color:#ffffff;}
-#picture a.small, #picture a.small:visited {
-	display:block;
-	width:642px;
-	height:417px;
-	text-decoration:none;
-	background:#ffffff;
-	top:0;
-	left:0;
-	border:0;
-}
-
-#picture a img {border:0;}
-#picture a.small:hover {text-decoration:none; background-color:#000000; color:#000000;}
-#picture a .large {display:block; position:middle; width:0; height:0; border:0; top:0; left:0;}
-#picture a.small:hover .large {
-	display:block;
-	position:relative;
-	top: -600px;
-	left:-385px;
-	width:1096px;
-	height:712px;
-	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	line-height: 35px;
-	font-weight: normal;
-}
 
 @font-face {
   font-family: "HelveticaLTStd-Roman";
@@ -176,13 +112,4 @@ p.projects_list {
 	font-size: 12px;
 }
 
-p.project_header {
-	font-family: HelveticaLTStd-Bold, Helvetica, Arial, sans-serif;
-    font-size: 1em;
-    line-height: .08em;
-	height: 2
-	
-	
-}.h1 {
-	font-size: 2em;
-}
+
