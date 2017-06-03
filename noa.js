@@ -9,7 +9,7 @@ $(function() {
 	];
 	var l = array.length;
 	var r = Math.floor(Math.random()*l);
-	var bgimgurl = array[r];
+	var bgimgurl = array[2];
 	$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
 	
 		$("#header-title").click(function(){
