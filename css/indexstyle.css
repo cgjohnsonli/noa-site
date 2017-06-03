@@ -2,11 +2,19 @@
 /* CSS Document */
 
 div {
-background:url(bg/courtyard.jpg)}
+background:url(courtyard.jpg)}
 
 img.preload{
 	display:none;
 }
+
+body{
+    padding: 0px;
+    margin: 0px;
+    min-width: 1280px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .background-hack {  
 z-index                 :-2;
