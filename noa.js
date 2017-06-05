@@ -54,10 +54,11 @@ $(function(){
 	var bglink = $(this).attr("href");
 	var use = bglink.replace(/[^0-9]/ig,"");
 	var number = use + 1;
-	count = count + 1;
-	if(count > use){count = 0;}
+
 	//count = count%number;
 	bglink = bglink.replace(use,count);
+	count = count + 1;
+	if(count > use){count = 0;}
 	$("div#randomimg2").css("background-image","url("+bglink+")");
 	 return false;
 	});
