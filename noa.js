@@ -1,6 +1,7 @@
 
 
 $(function() {
+	var mode = 1;
 	var array = [
 	"bg/hutong/hutong0.jpg",
 	"bg/trail/trail0.jpg",
@@ -30,12 +31,14 @@ $(function() {
 	$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
 	
 		$("#header-title").click(function(){
+			mode = 1;
 		r = Math.floor(Math.random()*l);
 		bgimgurl = array[r];
 		$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
+		$(before).css("color","#FFFFFF")
 		return false;
 		})
-});
+
 
 
 /*
@@ -48,20 +51,64 @@ $(function(){
 });
 */
 
-$(function(){
-	var count = -1;
+
+	var count = 0;
+	var use = 0;
 	var temp = "bg/courtyard/courtyard0.jpg"
+	var before;
 	$('#top, #top1').click(function(){
+		mode = -1;
 	var bglink = $(this).attr("href");
-	if(bglink != temp){count = -1; temp = bglink;}
-	var use = bglink.replace(/[^0-9]/ig,"");
-	var number = use + 1;
-	count = count + 1;
+	if(bglink != temp){
+		use = bglink.replace(/[^0-9]/ig,"");
+		count = 0; 
+		temp = bglink;}
+	else{count = count + 1;}
 	if(count > use){count = 0;}
 	//count = count%number;
 	bglink = bglink.replace(use,count);
 	$("div#randomimg2").css("background-image","url("+bglink+")");
+	$(before).css("color","#FFFFFF")
+	$(this).css("color","#FF3A05")
+	before = this;
 	 return false;
+	});
+	
+	$(document).keydown(function(event){
+	var keynum = event.which;
+	var bglink = temp;
+	if(mode == -1){
+	if(keynum==37){count = count - 1;if(count<0){count = use;}}
+	if(keynum==39){count = count + 1;if(count>use){count = 0;}}
+	bglink = bglink.replace(use,count);
+	$("div#randomimg2").css("background-image","url("+bglink+")");
+	 return false;
+	}
+	else{
+		r = Math.floor(Math.random()*l);
+		bgimgurl = array[r];
+		$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
+		return false;
+	}
+	});
+	
+	$('#left, #right').click(function(){
+		if(mode == -1){
+	var direct = $(this).attr("id");
+	var bglink = temp;
+	if (direct == "left"){count = count - 1;if(count<0){count = use;}}
+	if (direct == "right"){count = count + 1;if(count>use){count = 0;}}
+	bglink = bglink.replace(use,count);
+	$("div#randomimg2").css("background-image","url("+bglink+")");
+	 return false;
+		}
+		else{
+		r = Math.floor(Math.random()*l);
+		bgimgurl = array[r];
+		$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
+		return false;
+			
+		}
 	});
 });
 
