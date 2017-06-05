@@ -49,16 +49,18 @@ $(function(){
 */
 
 $(function(){
-	var count = 0;
+	var count = -1;
+	var temp = "bg/courtyard/courtyard7.jpg"
 	$('#top, #top1').click(function(){
 	var bglink = $(this).attr("href");
+	if(bglink != temp){count = -1; temp = bglink;}
 	var use = bglink.replace(/[^0-9]/ig,"");
 	var number = use + 1;
-
-	//count = count%number;
-	bglink = bglink.replace(use,count);
 	count = count + 1;
 	if(count > use){count = 0;}
+	//count = count%number;
+	bglink = bglink.replace(use,count);
+
 	$("div#randomimg2").css("background-image","url("+bglink+")");
 	 return false;
 	});
