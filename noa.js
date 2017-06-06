@@ -65,11 +65,10 @@ $(function(){
 		temp = bglink;}
 	else{count = count + 1;}
 	if(count > use){count = 0;}
-	//count = count%number;
 	bglink = bglink.replace(use,count);
 	$("div#randomimg2").css("background-image","url("+bglink+")");
-	$(before).css("color","#FFFFFF")
-	$(this).css("color","#FF3A05")
+	$(before).css("color"," ");
+	$(this).css("color","#FF3A05");
 	before = this;
 	 return false;
 	});
