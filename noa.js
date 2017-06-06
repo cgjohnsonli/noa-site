@@ -115,12 +115,11 @@ $(function(){
 	$(".basic-info").hide();
 	$(".basic-info#work").show();
 	$(".basic-info#foot").show();
-	$('#work, #news, #about').click(function(){
+	$('a#work, a#news, a#about').click(function(){
 	var show = $(this).attr("id");
 	$(".basic-info").hide();
 	$(".basic-info#"+show).show();
 	$(".basic-info#foot").show();
 	});
 });
-
 
