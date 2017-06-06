@@ -27,7 +27,7 @@ $(function() {
 	];
 	var l = array.length;
 	var r = Math.floor(Math.random()*l);
-	var bgimgurl = array[2];
+	var bgimgurl = array[0];
 	$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
 	
 		$("#header-title").click(function(){
