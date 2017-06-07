@@ -4,9 +4,7 @@ $(function() {
 	var mode = 1;
 	var array = [
 	"bg/hutong/hutong0.jpg",
-	"bg/trail/trail0.jpg",
 	"bg/courtyard/courtyard0.jpg",
-	"bg/firstavenue/firstavenue0.jpg",
 	"bg/klekovaca/klekovaca0.jpg",
 	"bg/unplaza/unplaza0.jpg",
 	"bg/ninthavenue/ninthavenue0.jpg",
@@ -20,10 +18,20 @@ $(function() {
 	"bg/trail/trail0.jpg",
 	"bg/west-hotel/west-hotel0.jpg",
 	"bg/science-island/science-island0.jpg",
+	"bg/firstavenue/firstavenue0.jpg",
 	"bg/museo-lima/museo-lima0.jpg",
 	"bg/allegheny/allegheny0.jpg",
 	"bg/dorigny/dorigny0.jpg",
 	"bg/helsinki/helsinki0.jpg",
+	"bg/taichung/taichung0.jpg",
+	"bg/lesoliver/lesoliver0.jpg",
+	"bg/busan/busan0.jpg",
+	"bg/aalto/aalto0.jpg",
+	"bg/sola-radhus/sola-radhus0.jpg",
+	"bg/notpark/notpark0.jpg",
+	"bg/lowwet/lowwet0.jpg",
+	"bg/highline/highline0.jpg",
+	
 	];
 	var l = array.length;
 	var r = Math.floor(Math.random()*l);
@@ -84,7 +92,8 @@ $(function(){
 	 return false;
 	}
 	else{
-		r = Math.floor(Math.random()*l);
+	if (keynum==37){r = r - 1;if(r<0){r = l-1;}}
+	if (keynum==39){r = r + 1;if(r>(l-1)){r = 0;}}
 		bgimgurl = array[r];
 		$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
 		return false;
@@ -102,7 +111,9 @@ $(function(){
 	 return false;
 		}
 		else{
-		r = Math.floor(Math.random()*l);
+	var direct = $(this).attr("id");
+	if (direct == "left"){r = r - 1;if(r<0){r = l-1;}}
+	if (direct == "right"){r = r + 1;if(r>(l-1)){r = 0;}}
 		bgimgurl = array[r];
 		$("div#randomimg2").css('background-image',('url("'+bgimgurl+'")'));
 		return false;
