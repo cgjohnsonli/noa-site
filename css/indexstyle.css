@@ -66,10 +66,10 @@ bottom                  :0;}
 
 #header-contact {
 	position:absolute;
-	margin-top:300px;
+	margin-top:260px;
 	margin-left:5px;
 	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.6em;
 	font-weight: bold;
     line-height: 1.2em;
 
@@ -79,7 +79,7 @@ bottom                  :0;}
 
 #contents {
 	position:absolute;
-	margin-top:430px;
+	margin-top:440px;
 	margin-left:5px;
 	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
     font-size: 1.1em;
