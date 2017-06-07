@@ -75,11 +75,22 @@ bottom                  :0;}
 
 }
 
+#outlink {
+	position:absolute;
+	margin-top:445px;
+	margin-left:5px;
+	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+    font-size: 1.6em;
+	font-weight: bold;
+    line-height: 1.2em;
+
+}
+
 
 
 #contents {
 	position:absolute;
-	margin-top:440px;
+	margin-top:470px;
 	margin-left:5px;
 	font-family: HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
     font-size: 1.1em;
